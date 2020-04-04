@@ -38,17 +38,22 @@
  *
  */
 
-// let firstName = "";
+let firstName = "Ramon";
+console.log(firstName);
 
 /**
  * @description
  * Create a variable called middleName and set the value to your middle name.
  */
+let middleName = "Ambrose";
+console.log(middleName);
 
 /**
  * @description
  * Create a variable called lastName and set the value to your last name.
  */
+let lastName = "Vazquez";
+console.log(lastName);
 
 /**
  * @description
@@ -56,6 +61,8 @@
  *
  * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/concat
  */
+let fullName = firstName + " " + middleName + " " + lastName;
+console.log(fullName);
 
 /**
  * @do
