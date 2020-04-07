@@ -10,6 +10,8 @@
  * @description
  * create an arrays of names
  */
+let fullName = ['Alberto', 'Manuel', 'Cardona']
+console.log(fullName)
 
 /**
  * @description
