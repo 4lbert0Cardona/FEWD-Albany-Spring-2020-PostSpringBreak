@@ -26,6 +26,11 @@
  * @returns {Boolean}
  */
 
+const xDividedbyY= function (x,y){
+  return x / y <= y / x }
+  console.log(xDividedby(18,9))
+
+
 /**
  * not zero is not equal to zero divided by zero
  * @returns {Boolean}
@@ -37,6 +42,11 @@
  * Check if x minus y is equal to the length of "length of fullName"
  * @returns {Boolean}
  */
+
+const fullName = 'Alberto Cardona'
+const xMinusY = function (){
+  return x - y
+}
 
 /**
  * Create a variable named fullName.
@@ -69,3 +79,8 @@
  * "four" is equal to 4
  * @returns {Boolean}
  */
+const numOfCatsThatStayHome = function ()
+{ const cats = 8;
+ const carriers = 3;
+ return cats % carriers};
+ console.log(numOfCatsThatStayHome());
