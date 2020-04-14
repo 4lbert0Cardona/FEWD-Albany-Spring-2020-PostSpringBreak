@@ -26,7 +26,7 @@
  * @returns {Boolean}
  */
 
-const xDividedbyY= function (x,y){
+const xDividedbyY = function (x,y){
   return x / y <= y / x }
   console.log(xDividedby(18,9))
 

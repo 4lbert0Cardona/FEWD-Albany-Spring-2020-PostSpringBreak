@@ -18,7 +18,10 @@ console.log(fullName)
  *
  * access the first item in the array above
  */
-
+    for(fullName){
+        
+    }
+ 
 /**
  * @description
  * access the last character in the first item in the array above
