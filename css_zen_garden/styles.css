@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h4,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  /* text-decoration: none;
+  color: inherit; */
+}
+
+/* Fonts */
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Libre Baskerville', serif; */
+
+.page-wrapper {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+}
+
+.intro {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+header,
+.summary,
+.preamble {
+  width: calc(30% - 30px);
+  /* margin: 50px */
+}
+/* //////////////////// */
+/* //////// MAIN ///////*/
+/* ///////// /////////// */
+
+.explanation {
+  background-image: url("https://images.unsplash.com/photo-1562887245-f2d5024f6134?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative
+}
+
+.explanation:after {
+  content: " ";
+  height: inherit;
+  width: 48%;
+  background-color: #444;
+  position: absolute;
+  top:0;
+  z-index: 10;
+}
+
+.participation {
+ background-image: url("https://images.unsplash.com/photo-1586897791687-7f5ff39beb05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-top: 200px;
+
+}
+.benefits {
+ background-image: url("https://images.unsplash.com/photo-1586897791687-7f5ff39beb05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-top: 200px;
+
+}
+
+
+
+.requirements {
+ background-image: url("https://images.unsplash.com/photo-1586897791687-7f5ff39beb05?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin-top: 200px;
+
+}
+
+footer {
+  display:flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 40px;
+  margin: 30px auto;
+}
+
+aside {
+  padding: 30px
+}
+
+nav li {
+  display: inline-block;
+  background-color: #999;
+  margin: 20px;
+}
+
+li a {
+ padding:35px 50px;
+}
