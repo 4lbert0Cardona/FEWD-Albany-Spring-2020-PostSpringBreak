@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap" rel="stylesheet');
+
+:root {
+  --main-purple: {
+    color: #965bc7;
+  }
+
+  --main-green: {
+    color: #d0f667;
+  }
+
+  --main-yellow : {
+    color: #ffe16b;
+  }
+}
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+ul {
+  list-style: none;
+}
+a {
+  /* text-decoration: none;
+  color: inherit; */
+}
+
+h1,
+h2,
+h4,
+h4,
+h5,
+h6 {
+  font-family: "Libre Baskerville", serif;
+}
+
+/* Fonts */
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Libre Baskerville', serif; */
+
+/* /////////////////////////
+//////////// HEADER ////////
+////////////////////////// */
+
+header {
+  background: linear-gradient(
+      rgba(255, 102, 0, 0.089),
+      rgba(0, 0, 0, 0.74)
+    ),
+    url("./img/header-puppies.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: #999;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4em;
+  bottom: 100px;
+  left: 30px;
+  background-color: rgba(95, 158, 160, 0.514);
+}
+
+h2 {
+  color: var(--main-purple);
+  margin: 0;
+  font-size: 1.5em;
+  bottom: 20px;
+  left: 30px;
+  background: rgba(243, 121, 213, 0.432);
+}
+
+h1,
+h2 {
+  position: absolute;
+  padding: 40px;
+  /* mix-blend-mode: multiply; */
+  color: #eee;
+}
+
+.intro {
+  position: relative;
+}
+.summary {
+  background-color: rgba(0, 0, 0, 0.397);
+  position: absolute;
+  padding: 20px;
+  top: 100px;
+  right: 30px;
+  width: 300px;
+  color: #eee;
+}
+
+.summary p a {
+  color: rgb(189, 146, 116);
+}
+
+.summary::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5d7";
+  position: absolute;
+  transform: rotate(310deg);
+  top: 10px;
+  left: 25px;
+}
+
+.summary::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5d7";
+  transform: rotate(310deg);
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+}
+
+.preamble,
+.explanation,
+.participation,
+.benefits,
+.requirements {
+  width: calc(100% - 150px);
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid rgba(68, 68, 68, 0.301);
+  box-shadow: 0px 8px 12px rgba(66, 65, 65, 0.288);
+}
+
+footer {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+/* footer a {
+  opacity: 1;
+  z-index: -10
+} */
+
+/* footer a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5d7";
+  transform: rotate(310deg);
+  position: absolute;
+  z-index: 0
+
+} */
+
+/* .zen-validate-css,
+.zen-validate-html,
+.zen-license,
+.zen-github,
+.zen-accessibility {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f5d7";
+  transform: rotate(310deg);
+  position: absolute;
+  z-index: 0;
+} */

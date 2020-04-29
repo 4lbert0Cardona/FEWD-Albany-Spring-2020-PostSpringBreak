@@ -1,0 +1,5 @@
+- close spacing between the anchor tags in the footer
+
+- background images on divs
+
+-header: preamble drop to the bottom of the header.

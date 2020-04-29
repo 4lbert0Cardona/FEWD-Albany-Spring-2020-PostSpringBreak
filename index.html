@@ -2,8 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css"
+    />
+
     <title>Intro to JavaScript</title>
   </head>
 
@@ -15,6 +29,65 @@
       </div>
       <h1>Introduction to JavaScript</h1>
     </header>
+
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+
+        <li id="subnav-parent">
+          <a href="#">Locations</a>
+
+          <ul id="subnav">
+            <li><a href="#">NewYork</a></li>
+            <li><a href="#">Chicago</a></li>
+            <li><a href="#">Miami</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Merch</a></li>
+      </ul>
+    </nav>
+    <div class="burger-wrap">
+      <i class="fas fa-hamburger"></i>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-hide">
+      <div>
+        <i class="far fa-window-close"></i>
+      </div>
+
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">Merch</a></li>
+      </ul>
+    </nav>
+    <div class="slider-wrapper">
+      <div id="autoplay">
+        <div>
+          <img
+            src="http://placehold.it/1200x400"
+            alt="random photo"
+          />
+        </div>
+        <div>
+          <img
+            src="http://placehold.it/1200x400"
+            alt="random photo"
+          />
+        </div>
+        <div>
+          <img
+            src="http://placehold.it/1200x400"
+            alt="random photo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="clock"></div> -->
     <main>
       <section>
         <p>
@@ -27,11 +100,87 @@
         </p>
       </section>
 
-      <div id="clock"></div>
+      <section class="article-section">
+        <article>
+          <figure class="article-img-wrapper">
+            <img
+              src="https://placehold.it/250x250"
+              alt="placeholder image"
+            />
+          </figure>
+          <div class="article-content">
+            <h3>Article 1</h3>
+            <p>
+              Lorem i<a href="#">psum dolor sit amet consectetur</a>
+              adipisicing elit. Eaque, recusandae.
+            </p>
+          </div>
+        </article>
+        <article>
+          <figure class="article-img-wrapper">
+            <img
+              src="https://placehold.it/250x250"
+              alt="placeholder image"
+            />
+          </figure>
+          <div class="article-content">
+            <h3>Article 1</h3>
+            <p>
+              Lorem i<a href="#">psum dolor sit amet consectetur</a>
+              adipisicing elit. Eaque, recusandae.
+            </p>
+          </div>
+        </article>
+        <article>
+          <figure class="article-img-wrapper">
+            <img
+              src="https://placehold.it/250x250"
+              alt="placeholder image"
+            />
+          </figure>
+          <div class="article-content">
+            <h3>Article 1</h3>
+            <p>
+              Lorem i<a href="#">psum dolor sit amet consectetur</a>
+              adipisicing elit. Eaque, recusandae.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
 
-    <script src="_classNotes/js/week 7/thursady/clock.js"></script>
+    <!-- <script src="_classNotes/js/week 7/thursady/clock.js"></script> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+    <script>
+      var slider = tns({
+        container: "#autoplay",
+        items: 1,
+        speed: 1000,
+        autoplay: false,
+        autoplayHoverPause: true,
+        autoplayTimeout: 3500,
+        swipeAngle: false,
+      });
+    </script>
+
+    <script>
+      let mobileIcon = document.getElementsByClassName(
+        "fa-window-close"
+      )[0];
+
+      let mobileNav = document.getElementById("mobile-nav");
+      let burger = document.getElementsByClassName("fa-hamburger")[0];
+
+      mobileIcon.addEventListener("click", function () {
+        mobileNav.classList.add("mobile-hide");
+        burger.classList.add('mobile-show')
+      });
+
+<<<<<<< HEAD
     <script src="exercise/01.array.js"></script>
 
     <script>
@@ -94,5 +243,13 @@
 //   add(0.2, 1)
     </script>
     <script></script>
+=======
+      burger.addEventListener("click", function () {
+        console.log("burger clicked");
+        burger.classList.add("mobile-hide");
+        mobileNav.classList.remove("mobile-hide");
+      });
+    </script>
+>>>>>>> 267320f72118cf85c1ef59750b572cd816e22dc3
   </body>
 </html>

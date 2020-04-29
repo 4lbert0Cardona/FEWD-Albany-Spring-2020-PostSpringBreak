@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px) {
+  #main-nav {
+    display: none;
+  }
+
+  .fa-hamburger {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  #main-nav {
+    display: block;
+  }
+
+
+  .fa-hamburger {
+    opacity: 0
+  }
+}
+
+@media screen and (min-width: 801px) {
+
+  .fa-hamburger {
+    display: none;
+  }
+}
+
+/* Slider  */
+
+.slider-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.slider-wrapper img {
+  display: block
+}
+
+.tns-controls,
+.tns-nav,
+button[data-action="stop"] {
+  display: none;
+}
